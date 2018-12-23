@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemySwimming_1.png-c334ed2e046e00fb7f1bbdae152771b1.stex"
+path="res://.import/meteorBrown_big1.png-3f4dc416571ebfa8cbe2bbe187f4fc89.stex"
 
 [deps]
 
-source_file="res://textures/enemySwimming_1.png"
-dest_files=[ "res://.import/enemySwimming_1.png-c334ed2e046e00fb7f1bbdae152771b1.stex" ]
+source_file="res://textures/meteorBrown_big1.png"
+dest_files=[ "res://.import/meteorBrown_big1.png-3f4dc416571ebfa8cbe2bbe187f4fc89.stex" ]
 
 [params]
 

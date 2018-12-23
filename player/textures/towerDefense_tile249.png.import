@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyWalking_2.png-7744656089dddd20813eebac7d0e9d66.stex"
+path="res://.import/towerDefense_tile249.png-80232f23d0f4759dbc2620bd8487dfb8.stex"
 
 [deps]
 
-source_file="res://textures/enemyWalking_2.png"
-dest_files=[ "res://.import/enemyWalking_2.png-7744656089dddd20813eebac7d0e9d66.stex" ]
+source_file="res://textures/towerDefense_tile249.png"
+dest_files=[ "res://.import/towerDefense_tile249.png-80232f23d0f4759dbc2620bd8487dfb8.stex" ]
 
 [params]
 

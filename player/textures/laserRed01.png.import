@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/playerGrey_up1.png-35f1f46dcc5c58f984c62fea79d97250.stex"
+path="res://.import/laserRed01.png-05a4e6c3fa19eeab8c1766655f7d1f84.stex"
 
 [deps]
 
-source_file="res://textures/playerGrey_up1.png"
-dest_files=[ "res://.import/playerGrey_up1.png-35f1f46dcc5c58f984c62fea79d97250.stex" ]
+source_file="res://textures/laserRed01.png"
+dest_files=[ "res://.import/laserRed01.png-05a4e6c3fa19eeab8c1766655f7d1f84.stex" ]
 
 [params]
 
