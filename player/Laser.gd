@@ -1,16 +1,16 @@
 extends Area2D
 
-export (int) var speed
+export (int) var speed 
 export (int) var damage
-export (float) var lifetime
+export (float) var lifetime 
 
 var velocity = Vector2()
 
 func start(_position, _direction):
     position = _position
     rotation = _direction.angle()
-    $Lifetime.wait_time = lifetime
-    velocity = _direction * speed
+    $Timer.wait_time = 3 #lifetime
+    velocity = _direction * 250 #speed
 
 func _process(delta):
     position += velocity * delta

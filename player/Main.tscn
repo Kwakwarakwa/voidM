@@ -1,34 +1,69 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://meteor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Main1.gd" type="Script" id=1]
 [ext_resource path="res://Player_RigidB.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player_2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://meteor.tscn" type="PackedScene" id=4]
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node2D" index="0"]
 
-[node name="RigidBody2D" parent="." index="0" instance=ExtResource( 1 )]
+script = ExtResource( 1 )
 
-mass = 20.0
+[node name="Player" parent="." index="0" instance=ExtResource( 2 )]
 
-[node name="RigidBody2D3" parent="." index="1" instance=ExtResource( 1 )]
+[node name="Player_2" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 317.105, 218.111 )
-scale = Vector2( 0.289988, 0.145004 )
-mass = 20.0
+position = Vector2( 706.524, 153.644 )
 
-[node name="RigidBody2D4" parent="." index="2" instance=ExtResource( 1 )]
+[node name="Camera" type="Camera2D" parent="." index="2"]
 
-position = Vector2( 394.889, 191.584 )
-scale = Vector2( 0.382606, 0.16626 )
-mass = 20.0
+position = Vector2( 515.139, 304.598 )
+scale = Vector2( 7.13413, 4.6685 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
 
-[node name="RigidBody2D2" parent="." index="3" instance=ExtResource( 1 )]
+[node name="RigidBody2D" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 412.798, 123.479 )
-scale = Vector2( -0.23786, 0.21043 )
-mass = 20.0
+position = Vector2( 614.275, 153.391 )
+scale = Vector2( 0.644579, 0.590088 )
 
-[node name="Player_RigidB" parent="." index="4" instance=ExtResource( 2 )]
+[node name="RigidBody2D2" parent="." index="4" instance=ExtResource( 4 )]
 
-speed = 50
+position = Vector2( 595.652, 321.288 )
+scale = Vector2( 0.808995, 0.667033 )
+
+[node name="RigidBody2D3" parent="." index="5" instance=ExtResource( 4 )]
+
+position = Vector2( 435.874, 160.207 )
+scale = Vector2( 0.58274, 0.48148 )
+
+[node name="RigidBody2D4" parent="." index="6" instance=ExtResource( 4 )]
+
+position = Vector2( 398.087, 267.947 )
+scale = Vector2( 1.03288, 0.976903 )
+
+[connection signal="shoot" from="Player" to="." method="_on_Player_shoot"]
+
+[connection signal="shoot_2" from="Player_2" to="." method="_on_Player2_shoot"]
 
 

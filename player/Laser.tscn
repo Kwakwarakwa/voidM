@@ -11,6 +11,7 @@ extents = Vector2( 26.9473, 3.4726 )
 [node name="Laser" type="Area2D"]
 
 position = Vector2( 113.614, 91.4147 )
+z_index = 2
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -19,12 +20,13 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 __meta__ = {
 "_edit_group_": true
 }
-speed = null
-damage = null
-lifetime = null
+speed = 3
+damage = 5
+lifetime = 5.0
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 

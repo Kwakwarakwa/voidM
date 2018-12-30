@@ -5,9 +5,9 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 66.8268
+radius = 34.3401
 
-[node name="RigidBody2D" type="RigidBody2D" index="0"]
+[node name="RigidBody2D" type="RigidBody2D"]
 
 position = Vector2( 345.769, 158.203 )
 scale = Vector2( 0.20195, 0.189132 )
@@ -29,21 +29,17 @@ linear_velocity = Vector2( 0, 0 )
 linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
+position = Vector2( 20.0619, -13.4436 )
+scale = Vector2( 0.759615, 0.733977 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="CollisionShape2D" index="0"]
 
-position = Vector2( -0.789734, 4.86502 )
-scale = Vector2( 1.51215, 1.60431 )
+position = Vector2( 4.14484, -3.08045 )
+scale = Vector2( 1.01271, 1.14625 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 
