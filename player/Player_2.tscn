@@ -4,7 +4,7 @@
 [ext_resource path="res://Player_2.gd" type="Script" id=2]
 [ext_resource path="res://Laser_P2.tscn" type="PackedScene" id=3]
 
-[node name="Player_2" instance=ExtResource( 1 )]
+[node name="Player_2" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
 Laser_P2 = ExtResource( 3 )

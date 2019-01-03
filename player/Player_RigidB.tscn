@@ -67,7 +67,7 @@ scale = Vector2( 0.574618, 0.486964 )
 z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 0, -60 )
-_sections_unfolded = [ "Offset", "Z Index" ]
+_sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 [node name="Muzzle" type="Area2D" parent="Cannon" index="0"]
 
