@@ -9,6 +9,7 @@ var max_speed = 1
 var can_shoot = true
 var cannon_cooldown = 1
 signal shoot_2
+var health = 100
 
 func _ready():
 	$gunTimer.wait_time = cannon_cooldown
@@ -44,6 +45,16 @@ func shoot():
 func open_fire():
 	if Input.is_action_just_pressed("Player2_fire"):
 		shoot()
+		
+func take_damage(amount):
+	health -= amount
+	emit_signal("health_changed")
+	if health <= 0:
+		expolde()
+
+func expolde():
+	queue_free()
+	print("exploded")
 
 func _physics_process(delta):
 	engine_angle()

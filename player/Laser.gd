@@ -1,7 +1,7 @@
 extends Area2D
 
 export (int) var speed 
-export (int) var damage
+export (int) var damage = 25
 export (float) var lifetime 
 
 var velocity = Vector2()
